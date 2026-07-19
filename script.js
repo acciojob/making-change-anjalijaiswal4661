@@ -7,13 +7,14 @@ const makeChange = (c) => {
   ['p', 1]
 ];
 let obj={};
-let count=0;
+// let count=0;
 	forEach(coin of coins){
 		 coinName = coin[0]
         coinValue = coin[1]
-		count=c/coinValue;
+		let count=Math.floor(c/coinValue);
 		obj[coinName]=count;
 		c=c%coinValue;
+		
 	}
 	return obj;
 };
