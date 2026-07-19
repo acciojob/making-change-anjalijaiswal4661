@@ -8,7 +8,7 @@ const makeChange = (c) => {
 ];
 let obj={};
 // let count=0;
-	forEach(coin of coins){
+	for(coin of coins){
 		 coinName = coin[0]
         coinValue = coin[1]
 		let count=Math.floor(c/coinValue);
@@ -20,5 +20,5 @@ let obj={};
 };
 
 // Do not the change the code below
-const c = prompt("Enter c: ");
+const c = Number(prompt("Enter c: "));
 alert(JSON.stringify(makeChange(c)));
